@@ -31,6 +31,18 @@ const editExpense = (id, update) => ({
   update
 });
 
+// //SET_TEXT_FILTER
+const setTextFilter = (text = '') => ({
+  type: 'SET_TEXT_FILTER',
+  text
+});
+
+// //SORT_BY_DATE
+// //SORT_BY_AMOUNT
+// //SORT_START_DATE
+// //SORT_END_DATE
+
+
 //Expense Reducer
 const expenseReducerDefaultState = [];
 const expenseReducer = (state = expenseReducerDefaultState, action) => {
@@ -58,6 +70,8 @@ const expenseReducer = (state = expenseReducerDefaultState, action) => {
   }
 }
 
+
+
 //Filter Reducer
 const filterReducerDefaultState = {
     text: '',
@@ -67,6 +81,11 @@ const filterReducerDefaultState = {
 };
 const filterReducer = (state = filterReducerDefaultState, action) => {
   switch (action.type) {
+    case 'SET_TEXT_FILTER':
+      return {
+        ...state,
+        text: action.text
+      };
     default:
       return state;
   }
@@ -93,6 +112,9 @@ store.dispatch(removeExpense({ id: expenseTwo.expense.id }));
 
 store.dispatch(editExpense(expenseOne.expense.id, { amount: 1820 }));
 
+store.dispatch(setTextFilter('rent'));
+
+store.dispatch(setTextFilter(''));
 
 
 
