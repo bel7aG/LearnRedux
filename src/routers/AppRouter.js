@@ -18,7 +18,7 @@ const Career = () => (
 
 const Contact = () => (
     <div className="fake-box fake-div-two">
-      <a href="https://github.com/bel7aG" target="_blank">
+      <a href="https://github.com/bel7aG" target="_blank" rel="noopener noreferrer">
         <h1>
           https://github.com/bel7aG
         </h1>
