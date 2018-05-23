@@ -11,7 +11,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   font-size: 1.6rem; }
 
@@ -41,8 +41,58 @@ input {
   font-family: cubano; }
 
 body {
-  background-color: #FFFFFF;
-  color: #212121; }
+  background-color: #340554;
+  color: #ffffff;
+  height: 100vh; }
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .header .heading {
+    position: relative; }
+    .header .heading-primary {
+      background-image: linear-gradient(to right, #222, #00C851, #33b5e5, #aa66cc, #ffbb33, #222);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 10rem;
+      z-index: 11; }
+      .header .heading-primary span {
+        opacity: .66;
+        z-index: -221;
+        background-image: inherit;
+        color: inherit;
+        -webkit-background-clip: text;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 61rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -51.25%);
+        text-shadow: 0 0 2rem rgba(0, 0, 0, 0.9);
+        animation-name: G;
+        animation-duration: 4.9s;
+        animation-iteration-count: infinite; }
+
+@keyframes G {
+  0% {
+    text-shadow: 0 0 2rem rgba(255, 68, 68, 0.63);
+    transform: translate(-50%, -51.25%) rotate(0deg); }
+  25% {
+    text-shadow: 0 0 1rem white;
+    transform: translate(-50%, -51.25%); }
+  50% {
+    text-shadow: 0 0 1rem rgba(255, 187, 51, 0.55);
+    transform: translate(-50%, -51.25%); }
+  75% {
+    text-shadow: 0 0 0rem rgba(51, 181, 229, 0.557);
+    transform: translate(-50%, -51.25%) rotate(17deg); }
+  90% {
+    transform: translate(-50%, -51.25%) rotate(-180deg) scale(0.01); }
+  100% {
+    text-shadow: 0 0 2rem rgba(255, 68, 68, 0.63);
+    transform: translate(-50%, -51.25%) rotate(0deg); } }
 
 .position-relative {
   position: relative !important; }

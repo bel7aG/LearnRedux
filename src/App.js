@@ -6,7 +6,12 @@ import AppRouter from './routers/AppRouter';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
+        <header className="header">
+          <h1 className="heading">
+            <span className="heading-primary">bel7a<span>G</span></span>
+          </h1>
+        </header>
       </div>
     );
   }

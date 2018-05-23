@@ -1,4 +1,68 @@
 body {
-  background-color: #FFFFFF;
-  color: $elegant-color-dark;
+  background-color: #340554;
+  color: $white-color;
+  height: 100vh;
+}
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .heading {
+    position: relative;
+    &-primary {
+      background-image: linear-gradient(to right, #222, $success-color, $info-color, $secondary-color, $warning-color, #222);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 10rem;
+      z-index: 11;
+      span {
+        opacity: .66;
+        z-index: -221;
+        background-image: inherit;
+        color: inherit;
+        -webkit-background-clip: text;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 61rem;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -51.25%);
+        text-shadow: 0 0 2rem rgba(#000, .9);
+        animation-name: G;
+        animation-duration: 4.9s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+
+@keyframes G {
+  0% {
+    text-shadow: 0 0 2rem rgba($danger-color, .63);
+    transform: translate(-50%, -51.25%) rotate(0deg);
+  }
+  25% {
+    text-shadow: 0 0 1rem rgba(#fff, 1);
+    transform: translate(-50%, -51.25%);
+
+  }
+  50% {
+    text-shadow: 0 0 1rem rgba($warning-color, .55);
+    transform: translate(-50%, -51.25%) ;
+
+  }
+  75% {
+    text-shadow: 0 0 0rem rgba($info-color, .557);
+    transform: translate(-50%, -51.25%) rotate(17deg);;
+
+
+  }
+  90% {
+    transform: translate(-50%, -51.25%) rotate(-180deg) scale(.01);
+  }
+  100% {
+    text-shadow: 0 0 2rem rgba($danger-color, .63);
+    transform: translate(-50%, -51.25%) rotate(0deg);
+  }
 }
