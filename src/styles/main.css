@@ -8,7 +8,7 @@
     transform: translate(-50%, -51.25%) rotate(0deg);
     opacity: .74; }
   25% {
-    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 1rem #038575;
     transform: translate(-50%, -51.25%);
     opacity: .74; }
   50% {
