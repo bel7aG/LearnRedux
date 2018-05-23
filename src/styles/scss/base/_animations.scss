@@ -1,36 +1,36 @@
 @keyframes G {
   0% {
     text-shadow: 0 0 2rem rgba(#000, .63);
-    transform: translate(-50%, -51.25%) rotate(0deg);
+    transform: translate(-50%, -51.36%) rotate(0deg);
     opacity: .74;
 
   }
   25% {
     text-shadow: 0 0 1rem rgba(rgb(3, 133, 117), 1);
-    transform: translate(-50%, -51.25%);
+    transform: translate(-50%, -51.36%);
     opacity: .74;
 
   }
   50% {
     text-shadow: 0 0 1rem rgba($warning-color, .55);
-    transform: translate(-50%, -51.25%) ;
+    transform: translate(-50%, -51.36%) ;
     opacity: .74;
 
   }
   75% {
     text-shadow: 0 0 0rem rgba($info-color, .557);
-    transform: translate(-50%, -51.25%) rotate(17deg);;
+    transform: translate(-50%, -51.36%) rotate(17deg);
     opacity: .066;
 
   }
   90% {
-    transform: translate(-50%, -51.25%) rotate(-180deg) scale(.01);
+    transform: translate(-50%, -51.36%) rotate(-180deg) scale(.01);
     opacity: .24;
 
   }
   100% {
     text-shadow: 0 0 2rem rgba(#000, .63);
-    transform: translate(-50%, -51.25%) rotate(0deg);
+    transform: translate(-50%, -51.36%) rotate(0deg);
     opacity: .74;
   }
 }

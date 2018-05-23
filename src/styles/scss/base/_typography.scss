@@ -11,10 +11,18 @@ body {
   .heading {
     position: relative;
     &-primary {
-      background-image: linear-gradient(to right, #222, $success-color, $info-color, $secondary-color, #222);
+      background-image: linear-gradient(
+      to right,
+      #222,
+      $success-color,
+      $info-color,
+      rgb(244, 0, 77),
+      $danger-color,
+      rgba(90, 1, 218, 0.99)
+      );
       -webkit-background-clip: text;
       color: transparent;
-      font-size: 10rem;
+      font-size: 10.1rem;
       z-index: 11;
       span {
         opacity: .66;
@@ -23,11 +31,11 @@ body {
         color: inherit;
         -webkit-background-clip: text;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 61rem;
+        font-size: 61.4rem;
         position: absolute;
         left: 50%;
         top:50%;
-        transform: translate(-50%, -51.25%);
+        transform: translate(-50%, -51.36%);
         text-shadow: 0 0 2rem rgba(#000, .9);
         animation-name: G;
         animation-duration: 4.9s;

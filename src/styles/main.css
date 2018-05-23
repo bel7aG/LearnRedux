@@ -5,26 +5,26 @@
 @keyframes G {
   0% {
     text-shadow: 0 0 2rem rgba(0, 0, 0, 0.63);
-    transform: translate(-50%, -51.25%) rotate(0deg);
+    transform: translate(-50%, -51.36%) rotate(0deg);
     opacity: .74; }
   25% {
     text-shadow: 0 0 1rem #038575;
-    transform: translate(-50%, -51.25%);
+    transform: translate(-50%, -51.36%);
     opacity: .74; }
   50% {
     text-shadow: 0 0 1rem rgba(255, 187, 51, 0.55);
-    transform: translate(-50%, -51.25%);
+    transform: translate(-50%, -51.36%);
     opacity: .74; }
   75% {
     text-shadow: 0 0 0rem rgba(51, 181, 229, 0.557);
-    transform: translate(-50%, -51.25%) rotate(17deg);
+    transform: translate(-50%, -51.36%) rotate(17deg);
     opacity: .066; }
   90% {
-    transform: translate(-50%, -51.25%) rotate(-180deg) scale(0.01);
+    transform: translate(-50%, -51.36%) rotate(-180deg) scale(0.01);
     opacity: .24; }
   100% {
     text-shadow: 0 0 2rem rgba(0, 0, 0, 0.63);
-    transform: translate(-50%, -51.25%) rotate(0deg);
+    transform: translate(-50%, -51.36%) rotate(0deg);
     opacity: .74; } }
 
 @keyframes open-console {
@@ -92,10 +92,10 @@ body {
   .header .heading {
     position: relative; }
     .header .heading-primary {
-      background-image: linear-gradient(to right, #222, #00C851, #33b5e5, #aa66cc, #222);
+      background-image: linear-gradient(to right, #222, #00C851, #33b5e5, #f4004d, #ff4444, rgba(90, 1, 218, 0.99));
       -webkit-background-clip: text;
       color: transparent;
-      font-size: 10rem;
+      font-size: 10.1rem;
       z-index: 11; }
       .header .heading-primary span {
         opacity: .66;
@@ -104,11 +104,11 @@ body {
         color: inherit;
         -webkit-background-clip: text;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 61rem;
+        font-size: 61.4rem;
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -51.25%);
+        transform: translate(-50%, -51.36%);
         text-shadow: 0 0 2rem rgba(0, 0, 0, 0.9);
         animation-name: G;
         animation-duration: 4.9s;
