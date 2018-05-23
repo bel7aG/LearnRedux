@@ -11,7 +11,7 @@ body {
   .heading {
     position: relative;
     &-primary {
-      background-image: linear-gradient(to right, #222, $success-color, $info-color, $secondary-color, $warning-color, #222);
+      background-image: linear-gradient(to right, #222, $success-color, $info-color, $secondary-color, #222);
       -webkit-background-clip: text;
       color: transparent;
       font-size: 10rem;
@@ -34,35 +34,12 @@ body {
         animation-iteration-count: infinite;
       }
     }
-  }
-}
-
-@keyframes G {
-  0% {
-    text-shadow: 0 0 2rem rgba($danger-color, .63);
-    transform: translate(-50%, -51.25%) rotate(0deg);
-  }
-  25% {
-    text-shadow: 0 0 1rem rgba(#fff, 1);
-    transform: translate(-50%, -51.25%);
-
-  }
-  50% {
-    text-shadow: 0 0 1rem rgba($warning-color, .55);
-    transform: translate(-50%, -51.25%) ;
-
-  }
-  75% {
-    text-shadow: 0 0 0rem rgba($info-color, .557);
-    transform: translate(-50%, -51.25%) rotate(17deg);;
-
-
-  }
-  90% {
-    transform: translate(-50%, -51.25%) rotate(-180deg) scale(.01);
-  }
-  100% {
-    text-shadow: 0 0 2rem rgba($danger-color, .63);
-    transform: translate(-50%, -51.25%) rotate(0deg);
+    &-secondary {
+      text-align: center;
+      color: rgba(#fff, 0);
+      animation-name: open-console;
+      animation-duration: 4.9s;
+      animation-iteration-count: infinite;
+    }
   }
 }

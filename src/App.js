@@ -10,7 +10,9 @@ class App extends Component {
         <header className="header">
           <h1 className="heading">
             <span className="heading-primary">bel7a<span>G</span></span>
+
           </h1>
+          <h2 className="heading-secondary">Open Console</h2>
         </header>
       </div>
     );
