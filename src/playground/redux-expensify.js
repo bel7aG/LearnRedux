@@ -174,7 +174,6 @@ const expenseThree = store.dispatch(addExpense({
   amount: 1100,
   createdAt: 300
 }));
-
 // console.log(expenseOne);
 //
 // store.dispatch(removeExpense({ id: expenseTwo.expense.id }));
