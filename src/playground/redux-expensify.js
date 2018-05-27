@@ -69,7 +69,7 @@ const expenseReducer = (state = expenseReducerDefaultState, action) => {
         action.expense
       ];
     case 'REMOVE_EXPENSE':
-      return state.filter(({ id }) => id !== action.id );
+      return state.filter(({ id }) => id !== action.id);
     case 'EDIT_EXPENSE':
       return state.map((expense) => {
         if (expense.id === action.id) {
@@ -85,9 +85,7 @@ const expenseReducer = (state = expenseReducerDefaultState, action) => {
       return state;
   }
 }
-
-
-
+ 
 //Filter Reducer
 const filterReducerDefaultState = {
     text: '',
