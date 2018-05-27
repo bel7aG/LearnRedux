@@ -89,7 +89,7 @@ const expenseReducer = (state = expenseReducerDefaultState, action) => {
 //Filter Reducer
 const filterReducerDefaultState = {
     text: '',
-    sortBy: 'date',
+    sortBy: 'amount',
     startDate: undefined,
     endDate: undefined
 };
@@ -143,6 +143,8 @@ const getVisiblExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
   }).sort((a, b) => {
     if (sortBy === 'date') {
       return a.createdAt < b.createdAt ? 1 : -1;
+    } else if (sortBy === 'amount') {
+      return a.amount < b.amount ? 1 : -1;
     }
   });
 }
@@ -157,7 +159,7 @@ const unsubscibe = store.subscribe(() => {
 const expenseOne = store.dispatch(addExpense({
   description: 'first month Rent',
   notes: 'Clean history renter',
-  amount: 600,
+  amount: 1600,
   createdAt: -100
 }));
 const expenseTwo = store.dispatch(addExpense({
@@ -169,9 +171,10 @@ const expenseTwo = store.dispatch(addExpense({
 const expenseThree = store.dispatch(addExpense({
   description: 'third month',
   notes: 'Clean history renter',
-  amount: 900,
+  amount: 1100,
   createdAt: 300
 }));
+
 // console.log(expenseOne);
 //
 // store.dispatch(removeExpense({ id: expenseTwo.expense.id }));
